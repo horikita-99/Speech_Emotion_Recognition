@@ -24,13 +24,13 @@ Each audio file is labeled in the filename (e.g., 1079_DFA_ANG_XX.wav).
 
 🔄 Pipeline
 
-Data Preprocessing
+**Data Preprocessing**
 
 Audio resampling to 16kHz mono
 
 Noise reduction & silence trimming
 
-Feature extraction:
+**Feature extraction:**
 
 MFCCs (40 coefficients + deltas)
 
@@ -38,7 +38,7 @@ Mel-Spectrograms (for CNN input)
 
 Padding to fixed length
 
-Model Architecture
+**Model Architecture**
 
 CNN layers → extract frequency & time-based features
 
@@ -46,7 +46,7 @@ LSTM layers → capture sequential dependencies
 
 Dense layers + Softmax → classify into 6 emotions
 
-Training Setup
+**Training Setup**
 
 Loss: categorical_crossentropy
 
@@ -56,7 +56,7 @@ Metrics: accuracy, f1-score
 
 Regularization: Dropout, BatchNorm, EarlyStopping
 
-Evaluation
+**Evaluation**
 
 Confusion Matrix
 
